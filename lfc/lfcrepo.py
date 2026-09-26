@@ -416,7 +416,7 @@ class LFCRepo(GitRepo):
             # Recurse
             for fj in os.listdir(fname):
                 # Add individual files
-                self._lfc_add(os.path.join(fname, fj))
+                self._lfc_add(os.path.join(fname, fj), mode=mode)
             # Don't continue with original dir
             return
         # Make sure main file is ignored

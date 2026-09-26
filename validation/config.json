@@ -1,0 +1,44 @@
+{
+  "issue": 1,
+  "issue_url": "https://github.com/nasa/lfc/issues/1",
+  "base": "9c500dc66fff0db6d17c0736ea238cdb4606346f",
+  "sha": "5073ecc1ef16c12f3993882504ce9a81ff95adf4",
+  "branch": "fix/recursive-add-mode-20260926",
+  "paths": [
+    "lfc/lfcrepo.py",
+    "test/10_lfc/04_recursive_mode/test_recursive_mode.py"
+  ],
+  "title": "Preserve the requested mode when adding directories recursively",
+  "source": "lfc/lfcrepo.py",
+  "test": "test/10_lfc/04_recursive_mode/test_recursive_mode.py",
+  "suite": [
+    "-m",
+    "pytest",
+    "-q",
+    "test/01_argread",
+    "test/03_kwparse",
+    "test/02_gitutils/02_shellutils/test_03_identify",
+    "test/02_gitutils/02_shellutils/test_06_filename",
+    "test/10_lfc/04_recursive_mode"
+  ],
+  "suite_marker": "53 passed",
+  "targeted": [
+    "-m",
+    "pytest",
+    "-q",
+    "test/10_lfc/04_recursive_mode/test_recursive_mode.py"
+  ],
+  "original_marker": "8 failed, 13 passed",
+  "module": "lfc",
+  "build_args": [
+    "--wheel"
+  ],
+  "installed": [
+    "-m",
+    "pytest",
+    "-q",
+    "test_installed.py"
+  ],
+  "installed_marker": "21 passed",
+  "summary": "53 selected tests and 21 installed-wheel cases passed; 8 original failures and 13 passing controls reproduced."
+}
